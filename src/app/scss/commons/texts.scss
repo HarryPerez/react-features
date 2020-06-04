@@ -1,0 +1,158 @@
+@import 'variables/colors';
+
+%text-base {
+  color: $white;
+  font-family: RubikRegular;
+}
+
+%text-base-black {
+  color: $cold-gray;
+  font-family: RubikRegular;
+}
+
+.text-xxbig {
+
+  @extend %text-base;
+  font-size: 90px;
+  line-height: 84px;
+}
+
+.text-xbig {
+
+  @extend %text-base;
+  font-size: 56px;
+  line-height: 66px;
+}
+
+.text-big {
+
+  @extend %text-base;
+  font-size: 32px;
+  line-height: 28px;
+}
+
+.text-normal {
+
+  @extend %text-base;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-small {
+
+  @extend %text-base;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.text-xsmall {
+
+  @extend %text-base;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.text-small-black {
+
+  @extend %text-base-black;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.light {
+  font-family: RubikLight;
+}
+
+.silverription {
+  color: $silver;
+}
+
+.filter-quantity {
+  color: $silver;
+  font-family: RubikMedium;
+}
+
+.bold {
+  color: $dusty-gray;
+  font-family: RubikMedium;
+  font-size: 16px;
+}
+
+.bold-small {
+  color: $white;
+  font-family: RubikMedium;
+  font-size: 14px;
+}
+
+.bold-white {
+  color: $white;
+  font-family: RubikMedium;
+  font-size: 18px;
+}
+
+.bold-big {
+  color: $mine-shaft;
+  font-family: RubikMedium;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.bold-big-green {
+  color: $cutty-stark;
+  font-family: RubikMedium;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.bold-yellow {
+  color: $yellow;
+  font-family: RubikMedium;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-start {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.text-end {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-auto {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bold-white-regular {
+  color: $white;
+  font-family: RubikRegular;
+  font-size: 18px;
+}
+
+.bold-regular {
+  color: $dusty-gray;
+  font-family: RubikRegular;
+  font-size: 16px;
+}

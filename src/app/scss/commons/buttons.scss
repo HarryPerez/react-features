@@ -1,0 +1,83 @@
+@import 'variables/colors';
+
+@import 'variables/variables';
+
+%button-base {
+  border-radius: 5px;
+  color: $white;
+  font-family: RubikMedium;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.robinsegg-blue {
+  color: $robinsegg-blue;
+  font-size: 14px;
+  font-family: RubikMedium;
+  font-weight: 500;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 86px;
+}
+
+.check-print-button {
+
+  @extend %button-base;
+  background: $cutty-stark;
+  border: 2px solid $cutty-stark;
+  height: $button-height;
+  font-family: RubikMedium;
+  max-width: 284px;
+}
+
+.button-disable {
+
+  @extend %button-base;
+  background: $dove-gray;
+  border: 2px solid $dusty-gray;
+  cursor: initial;
+  pointer-events: none;
+}
+
+.search-button {
+
+  @extend %button-base;
+  background: linear-gradient(0deg, rgba($black, 0) 0%, rgba($white, 0.1) 100%);
+  background-color: $dove-gray;
+  border-radius: 0 0 5px 5px;
+  font-size: 18px;
+  height: 80px;
+  min-width: 284px;
+}
+
+.counter-circle {
+  background-color: $navbar-bg;
+  border-radius: 93px;
+  height: 186px;
+  width: 184px;
+}
+
+.order-button {
+
+  @extend %button-base;
+  color: $spray;
+  padding: 8px 0;
+}
+
+.order-button-changed {
+
+  @extend %button-base;
+  color: $spray;
+  box-shadow: 0 0 0 2px $dark-gray;
+}
+
+.primary-button {
+
+  @extend %button-base;
+  background-color: $cutty-stark;
+  font-size: 18px;
+  padding: 20px;
+}

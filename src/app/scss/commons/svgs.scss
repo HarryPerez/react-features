@@ -1,0 +1,51 @@
+@import 'variables/colors';
+
+.rotate-ninety {
+  transform: rotate(90deg);
+}
+
+.rotate-twohundredseventy {
+  transform: rotate(270deg);
+}
+
+.icon-yellow {
+
+  polygon {
+    fill: $yellow;
+  }
+}
+
+.icon-gray {
+
+  path {
+    fill: $silver;
+  }
+}
+
+.icon-red {
+
+  path {
+    fill: $sunset-orange;
+  }
+}
+
+.icon-green {
+
+  path {
+    fill: $cutty-stark;
+  }
+}
+
+.icon-black {
+
+  path {
+    fill: $cold-gray;
+  }
+}
+
+.icon-bell-green {
+
+  path {
+    fill: $pine-green;
+  }
+}

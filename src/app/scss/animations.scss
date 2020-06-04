@@ -1,0 +1,128 @@
+$transition-duration: 200ms;
+$transition-function: cubic-bezier(0.17, 0.71, 0.44, 1);
+
+@mixin appear-animation ($ani-name: appear, $fill-mode: both, $transform-x: 0) {
+  animation: $ani-name $transition-duration $transition-function;
+  animation-delay: #{--animation-delay};
+  animation-fill-mode: $fill-mode;
+
+  @keyframes #{$ani-name} {
+
+    from {
+      opacity: 0;
+      transform: translate($transform-x, 6px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate($transform-x, 0);
+    }
+  }
+}
+
+@keyframes appearFromLeft {
+
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+%appear {
+  animation: appear $transition-duration $transition-function;
+  animation-fill-mode: both;
+  animation-delay: #{--animation-delay};
+}
+
+%float {
+  animation: float $transition-duration $transition-function;
+  animation-fill-mode: both;
+  animation-delay: #{--animation-delay};
+}
+
+%grow {
+  animation: grow $transition-duration $transition-function;
+  animation-fill-mode: both;
+  animation-delay: #{--animation-delay};
+}
+
+%slide-down {
+  animation: slide-down $transition-duration $transition-function;
+  animation-fill-mode: both;
+  animation-delay: #{--animation-delay};
+}
+
+@keyframes appear {
+
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  10% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow {
+
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-down {
+
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,40 @@
+@import 'variables/colors';
+
+.order-min-five {
+  background-color: $dark-green;
+  border: 2px solid $yellow;
+}
+
+.order-min-fifteen {
+  background-color: $coffee-bean;
+  border: 2px solid $sunset-orange;
+}
+
+.order-min-thirty {
+  background-color: $irish-coffee;
+  border: 2px solid $sunset-orange;
+}
+
+.order-default {
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+}
+
+.order-canceled {
+  background-color: $coffee-bean;
+  border: 2px solid $coffee-bean;
+}
+
+.order-waiting {
+  background-color: $mine-shaft;
+  border: 2px solid $dove-gray;
+}
+
+.order-delivered {
+  background-color: $stromboli;
+  border: 2px solid $stromboli;
+}
+
+.order-expedition-text {
+  color: $silver;
+}
