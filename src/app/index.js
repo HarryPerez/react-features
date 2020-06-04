@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from './assets/icons/logo.svg';
-import './styles.css';
+import styles from './styles.module.scss';
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -8,9 +8,9 @@ function App() {
   const decCounter = () => setCounter(counter - 1);
 
   return (
-    <div className='App'>
-      <div className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+    <div className={styles.app}>
+      <div className={styles['app-header']}>
+        <img src={logo} className={styles['app-logo']} alt='logo' />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
